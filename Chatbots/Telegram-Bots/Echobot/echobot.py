@@ -37,7 +37,7 @@ def send_message(text, chat_id, first_name, last_name):
 	if text == "Hi" or text == "/start":
 		url = URL + "sendMessage?text=Hello+{}+{}+From+Aayu+Bot+by+Aayush+Ahuja+.+.+.+.+Basically+I+am+an+echo+bot+So+try+me&chat_id={}".format(first_name ,last_name ,chat_id)
 	else :
-		url = URL + "sendMessage?text={}&chat_id={}".format(text, chat_id)
+		url = URL + "sendMessage?text={}&chat_id={}".format(text,chat_id)
 		
 	get_url(url)
 
